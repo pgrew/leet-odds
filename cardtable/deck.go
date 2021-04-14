@@ -40,6 +40,8 @@ func (d *Deck) assembleStandardDeck() {
 // Shuffle randomly rearranges the cards in this deck
 func (d *Deck) Shuffle() {
 	// TODO shuffle
+	rand.Seed(time.Now().UnixNano())
+	rand.Shuffle(len(d.deck), func(i, j int) { d.deck[i], d.deck[j] = d.deck[j], d.deck[i] })
 }
 
 // GetCard gets a card off the top of the deck
