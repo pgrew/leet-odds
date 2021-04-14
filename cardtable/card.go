@@ -17,6 +17,7 @@ const (
 
 // Card represents a standard (or wild) playing card
 type Card struct {
+	isHidden bool
 	rank     int
 	wildcard bool
 	suit     Suit
