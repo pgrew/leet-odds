@@ -1,7 +1,8 @@
 package cardtable
 
-type CardTable struct {
+type Table struct {
 	players []Player
-	pot     Pot
+	mainPot Pot
+	sidePot Pot
 	dealer  Dealer
 }
