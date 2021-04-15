@@ -1,7 +1,10 @@
-package cardtable
+package main
+
+import (
+	"fmt"
+)
 
 type game struct {
-	rounds      []Round
 	players     []Player
 	board       Board
 	button      Player
@@ -12,4 +15,8 @@ type game struct {
 
 type Game interface {
 	Deal() error
+}
+
+func main() {
+	fmt.Println("Hello, playground")
 }

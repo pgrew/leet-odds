@@ -1,6 +1,8 @@
-package cardtable
+package main
 
 import "errors"
+import "math/rand"
+import "time"
 
 // Deck represents a deck of cards. Decks are assembled, shuffled, and dealt.
 type Deck struct {

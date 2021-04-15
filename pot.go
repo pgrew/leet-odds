@@ -1,11 +1,11 @@
-package cardtable
+package main
 
 import "errors"
 
 // Pot is the pile of chips up for grab in a card game
 type Pot struct {
 	chips       []*Chip
-	minBetValue int32
+	minBetValue int64
 }
 
 // NewPot returns a new Pot instance
@@ -24,7 +24,7 @@ func (p *Pot) Bet(theBet []*Chip) error {
 		return errors.New("Error: bet did not exceed the minimum allowed by pot")
 	}
 	// TODO: what if total exceeds int32 size?
-	p.SetMinimumBetAmout(int32(total))
+	p.SetMinimumBetAmout(int64(total))
 	return nil
 }
 
@@ -34,12 +34,12 @@ func (p *Pot) add(c *Chip) {
 }
 
 // SetMinimumBetAmout sets the minimum value a bet can be
-func (p *Pot) SetMinimumBetAmout(minBet int32) {
+func (p *Pot) SetMinimumBetAmout(minBet int64) {
 	p.minBetValue = minBet
 }
 
 // GetMinimumBetAmount returns the minimum bet value allowed by this pot
-func (p *Pot) GetMinimumBetAmount() int32 {
+func (p *Pot) GetMinimumBetAmount() int64 {
 	return p.minBetValue
 }
 

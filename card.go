@@ -1,4 +1,4 @@
-package cardtable
+package main
 
 // Suit represents a color suit in cards
 type Suit string

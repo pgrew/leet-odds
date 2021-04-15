@@ -1,8 +1,10 @@
-package cardtable
+package main
 
 type Table struct {
 	players []Player
 	mainPot Pot
 	sidePot Pot
-	dealer  Dealer
+	badBeat Pot
+	board Board
+	deck Deck
 }

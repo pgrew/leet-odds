@@ -9,15 +9,13 @@ We need to define things such as the following:
 - Suit
 - Card (including wildcards)
 - Game (needs to be interface???)
-- Dealer
 - Player
-- Seat
 - Table
 - Pot
 - Hand
-- Chip (denominations)
+- Chip (todo)
 - Muck
-- Board
+- Board (cards and burn)
 - Round (interface??)
 
 *actions*
@@ -26,7 +24,7 @@ We need to define things such as the following:
 - Action (call, raise, fold, all-in, min raise)
 - Hand ranker (maybe under dealer or showdown?)
 - Bet
-- Emote ( "Dirk!", "I just got completely screwed!")
+- Emote ( "Dirk!", "I just got completely screwed!") this muy buy-in
 - Exchange chips with fellow players
 
 *Variants*
@@ -44,6 +42,8 @@ We need to define things such as the following:
     - The cards in the muck are revealed after the game is over. Another showdown is done and the winner gets half the pot.
 - Cincinatti
     - Each player gets three cards
+- Cincinatti Reds
+    - Cincinatti but only reds are wild. "Pete Rose" edition allows for side pot on highest red. No reveal on claiming the side pot unless challanged with a side pot match bet.
 - Mice and men
     - Not worth explaining right now
 - Mali
